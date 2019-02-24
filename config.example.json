@@ -1,0 +1,21 @@
+{
+        "folder_name":"local",
+        "s3_bucket_name":"securewebsite-prod-backup",
+        "s3_bucket_key_id":"supersecretbucketkey",
+        "s3_bucket_key_secret":"doyoureallythinkiwouldputprodkeysinanexamplefile",
+        "webhook":"https://discordapp.com/api/webhooks/545231363947626519/discordwebhooktoken",
+        "webhook_tag":"<@252869311545212928>",
+        "webhook_nicejobname":"My Production Dumpsterfire",
+        "keep_local_days":14,
+        "mysqldump":"/home/cake/backups/mysql.cnf",
+        "mysql_dbs":["plaintext_password_database","prod_data","stage_data"],
+        "files":["/home/bots/chat-bot/config/prod.config.json",
+                "/home/bots/chat-bot/database/storage.db",
+                "/etc/nginx/sites-enabled/site.conf",
+                "/etc/mysql/my.cnf",
+                "/etc/php/7.0/fpm/pool.d/prod.conf"],
+        "folders":["/www/securewebsite.com/",
+                "/www/nota.securewebsite.com/static/emotes/",
+                "/www/nota.securewebsite.com/static/flairs/",
+                "/www/overlay.securewebsite.com/"]
+}
