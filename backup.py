@@ -66,7 +66,7 @@ def copy_file(filename):
     shutil.copyfile(filename, os.path.join(backup_folder(), filename))
 
 def copy_to_s3(filename):
-    s3.upload_file(os.path.join(backup_folder(), filename), cfg['s3_bucket_name'], str(date.today())+"/"+filename)
+    s3.upload_file(os.path.join(backup_folder(), filename), cfg['s3_bucket_name'], str(date.today())+"/"+filename,  ExtraArgs={'StorageClass':cfg['s3_storage_class']})
     print("Uploaded: {}".format(filename))
 
 def dump_db(database):

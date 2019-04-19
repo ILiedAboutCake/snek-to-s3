@@ -3,6 +3,7 @@
         "s3_bucket_name":"securewebsite-prod-backup",
         "s3_bucket_key_id":"supersecretbucketkey",
         "s3_bucket_key_secret":"doyoureallythinkiwouldputprodkeysinanexamplefile",
+	"s3_storage_class":"STANDARD_IA",
         "webhook":"https://discordapp.com/api/webhooks/545231363947626519/discordwebhooktoken",
         "webhook_tag":"<@252869311545212928>",
         "webhook_nicejobname":"My Production Dumpsterfire",

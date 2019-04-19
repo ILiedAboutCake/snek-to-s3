@@ -1,3 +1,4 @@
 .mypy_cache/
 config.json
 mysql.cnf
+local/
