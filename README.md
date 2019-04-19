@@ -19,16 +19,18 @@ I would recommend only allowing `PutObject` write access to prevent rogue action
 ```
 {
     "Version": "2012-10-17",
-    "Id": "Policy122334455676787",
     "Statement": [
         {
-            "Sid": "Stmt122455667688",
+            "Sid": "VisualEditor0",
             "Effect": "Allow",
-            "Principal": {
-                "AWS": "arn:aws:iam::1223434556798:user/mybackups"
-            },
-            "Action": "s3:PutObject",
-            "Resource": "arn:aws:s3:::my-backup-bucket/*"
+            "Action": [
+                "s3:PutObject",
+                "s3:ListBucket*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::website-prod-backup/*",
+                "arn:aws:s3:::website-prod-backup"
+            ]
         }
     ]
 }
